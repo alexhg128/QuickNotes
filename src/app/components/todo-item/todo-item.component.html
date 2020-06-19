@@ -1,0 +1,14 @@
+<div [ngClass]="{
+    'card': true,
+    'p-3': true,
+    'completed-card': item.completed
+}">
+    <blockquote class="blockquote mb-0 card-body">
+        <p [ngClass]="{ 'completed-text': item.completed }">{{ item.text }} <span class="badge badge-pill badge-dark">{{ item.id }}</span></p>
+        <p class="icon-group">
+            <i class="icon las la-times" *ngIf="item.completed" (click)="markAsIncomplete(item.id)"></i>
+            <i class="icon las la-check" *ngIf="!item.completed" (click)="markAsCompleted(item.id)"></i>
+            <i class="icon lar la-trash-alt" (click)="deleteNote(item.id)"></i>
+        </p>
+    </blockquote>
+</div>

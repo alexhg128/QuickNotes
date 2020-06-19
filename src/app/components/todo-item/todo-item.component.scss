@@ -1,0 +1,22 @@
+.icon-group {
+    margin: 0;
+    font-size: larger;
+}
+
+.icon {
+    margin-right: 5px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.icon:hover {
+    color: rgb(48, 126, 228);
+}
+
+.completed-card {
+    background-color: rgb(231, 231, 231);
+}
+
+.completed-text {
+    text-decoration: line-through;
+}

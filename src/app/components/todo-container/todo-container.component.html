@@ -1,0 +1,11 @@
+<!-- Title -->
+<h2>Quick Notes</h2>
+
+<div class="form-container">
+    <app-todo-form></app-todo-form>
+</div>
+
+<!-- Notes -->
+<div class="card-columns">
+    <app-todo-item *ngFor="let note of _todoService.notes" [item]="note"></app-todo-item>
+</div>
